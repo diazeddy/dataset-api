@@ -1,0 +1,7 @@
+First Name,Middle Name,Last Name,Suffix,DOB,Gender,Patient Record Number,SSN,Address 1,Address 2,City,State,Zip Code,Home Phone,Work Phone,Mobile Phone,Other Phone,Primary Phone,MBI,Medicaid State,Medicaid Number,Medicare Advantage,Private Insurance,Self Pay,PatientId,OrganizationId
+Test,,Patient,,2001.12.42,M,1.23412E+14,125-12-3235,1721 22nd Ave,,Seattle,WA,98122,323-744-7096,,,,Home Phone,,,,,,,125123,12612323
+Test,,Patient,,2001.12.42,M,,,,,,WA,98122,,,,,,,,,,,,125124,12612324
+Test,,Patient,,2001.12.42,M,,125-12-3235,1721 22nd Ave,,Seattle,WA,98122,,323-744-7096,,,Work Phone,1EG4-TE5-MK73,,,TRUE,,,125125,12612325
+Test,,Patient,,2001.12.42,M,,125-12-3235,,,,WA,98122,,,,,,,,,,TRUE,,125126,12612326
+Test,,Patient,,2001.12.42,M,,125-12-3235,,,,WA,98122,,,,,,,,,,,TRUE,125127,12612327
+Test,,Patient,,2001.12.42,M,,,,,,WA,98122,,,,,,,WA,1-833-731-2167,,,,125128,12612328
