@@ -156,8 +156,36 @@ Create a backend service that ingests machine learning data and stores it in a d
 - Input health check path as "/docs"
   ![img_1.png](images/img_15.png)
 - Click "Create".
+
+### Steps to create target group
+- Navigate to the target group section and click create Target Group
+- Choose Application Load Balancer as for target type
+- Choose IPv4 for  IP address type
+- Input target group name
+  ![img.png](images/img_22.png)
+- Input "/docs" for health check path
+  ![img.png](images/img_23.png)
+- Click "Next" button.
+- Select application load balancer created in previous step
+  ![img.png](images/img_24.png)
+- Click create target group
+
+### Steps to add network load balancing to prevent from changing public ip address
+- Navigate to the load balancing and click create Network Load Balancer
+- Input network load balancer name
+- Choose Internet-facing for Scheme
+- Choose IPv4 for Load Balancer IP address type
+  ![img.png](images/img_19.png)
+- Mapped availability zone with subnets
+  ![img.png](images/img_20.png)
+- Choose security group that allow http 80 port from anywhere.
+  ![img_1.png](images/img_21.png)
+- Choose target group that created in previous step.
+  ![img.png](images/img_25.png)
+- Click Create Load Balancer
+
 Now the ECS service is deployed, and we can be able to access the project.
-Currently, the service is deployed on http://18.218.10.45 and can check the swagger page on http://18.218.10.45/docs,
+Currently, the service is deployed on http://datasetapiapp-load-balancer-04340e1eebd0a70e.elb.us-east-2.amazonaws.com and can check the swagger page on http://datasetapiapp-load-balancer-04340e1eebd0a70e.elb.us-east-2.amazonaws.com/docs,
 Also I built the CI/CD pipeline with GitHub actions that will deploy the project to AWS ECS automatically when the new code is pushed to the main branch.
 
 ### Logging for ECS
